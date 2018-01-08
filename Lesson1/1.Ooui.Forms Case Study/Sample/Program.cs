@@ -1,4 +1,6 @@
 ﻿using System;
+using Ooui;
+using Xamarin.Forms;
 
 namespace Sample
 {
@@ -6,7 +8,11 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Xamarin.Forms.Forms.Init();
+            MainPage.Publish();
+            
+            Console.WriteLine("Hit any key to close program");
+            Console.ReadLine();
         }
     }
 }
