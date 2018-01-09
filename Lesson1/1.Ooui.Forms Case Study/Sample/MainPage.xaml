@@ -3,19 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ooui="clr-namespace:Ooui.Forms;assembly=Ooui.Forms"
              x:Class="Sample.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="StackLayout">
+                <Setter Property="Padding" Value="40,0,40,0" />
+                <Setter Property="Spacing" Value="10" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="32" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="2" />
+                <Setter Property="Color" Value="Black" />
+                <Setter Property="Margin" Value="0,10,0,10" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="40,0,40,0">
-            <Label Text="Xamarin Intro Class!" 
-                   FontSize="32" 
-                   FontAttributes="Bold"
-                   HorizontalOptions="CenterAndExpand" />
-            <Entry x:Name="Entry" />
-            <DatePicker x:Name="DatePicker" />
-            <StackLayout Spacing="30" 
+        <StackLayout>
+            <Label Text="Xamarin Intro Class!" />
+            <Entry Placeholder="This is an entry field" />
+            <DatePicker  />
+            <StackLayout Spacing="30"
+                         Padding="0"
                          Orientation="Horizontal">
-                <Switch x:Name="switch1" IsToggled="true" />
-                <Switch x:Name="switch2" IsToggled="false" />
+                <Switch IsToggled="true" />
+                <Switch IsToggled="false" />
             </StackLayout>
+            <BoxView />
             <Button Text="Tap to Display Alert"
                     Clicked="OnButtonClicked" />
         </StackLayout>
