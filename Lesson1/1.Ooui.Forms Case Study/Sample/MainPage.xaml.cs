@@ -1,6 +1,5 @@
 using Ooui;
 using System;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +11,10 @@ namespace Sample
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new
+            {
+                Description = "Test"
+            };
         }
 
         public async void OnButtonClicked(object sender, EventArgs args)
