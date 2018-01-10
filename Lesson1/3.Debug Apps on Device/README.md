@@ -1,0 +1,1 @@
+Let's build something similar to the Sample App and Case Study. We can take input from the class of what controls we want to create.
