@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleApp.Styles.OouiSamplePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="StackLayout">
+                <Setter Property="Padding" Value="40,0,40,0" />
+                <Setter Property="Spacing" Value="10" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="32" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="2" />
+                <Setter Property="Color" Value="Black" />
+                <Setter Property="Margin" Value="0,10,0,10" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="CadetBlue" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Xamarin Intro Class!" />
+            <Entry Placeholder="This is an entry field" />
+            <DatePicker />
+            <StackLayout Spacing="30"
+                         Padding="0"
+                         Orientation="Horizontal">
+                <Switch IsToggled="true" />
+                <Switch IsToggled="false" />
+            </StackLayout>
+            <BoxView />
+            <Button Text="Tap to Display Alert"  />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

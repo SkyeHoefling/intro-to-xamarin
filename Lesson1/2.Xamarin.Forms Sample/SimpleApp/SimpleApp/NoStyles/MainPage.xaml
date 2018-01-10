@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SimpleApp"
+             x:Class="SimpleApp.NoStyles.MainPage"
+             Title="Rochester Xamarin">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Alert"
+                     Clicked="Alert_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="30"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            <Label Text="{Binding Description}" />
+            <Button Text="{Binding ButtonText}"
+                    Clicked="Button_Clicked"
+                    TextColor="White"
+                    BackgroundColor="CadetBlue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
