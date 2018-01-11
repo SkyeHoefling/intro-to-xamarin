@@ -12,6 +12,8 @@ Goals:
     * Ubuntu
     * Web
 * Intro to the Xamarin project and how to install it into visual studio
+
+### Lesson 2 Items ###
 * Talk about the basics of MVVM and Xaml
 * Talk about isolation of concerns of MVVM
 * Deploy apps
