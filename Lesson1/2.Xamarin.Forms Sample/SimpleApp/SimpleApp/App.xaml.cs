@@ -8,7 +8,7 @@ namespace SimpleApp
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new Styles.MainPage())
+			MainPage = new NavigationPage(new MainPage())
             {
                 BarBackgroundColor = Color.AntiqueWhite
             };

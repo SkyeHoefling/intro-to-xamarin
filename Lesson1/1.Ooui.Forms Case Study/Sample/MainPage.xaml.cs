@@ -30,6 +30,7 @@ namespace Sample
 
         public static void Publish()
         {
+            UI.Port = 8156;
             UI.Publish ("/main", CreateElement);
         }
     }
